@@ -24,10 +24,10 @@
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
-    header.site { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; padding: 36px 0 12px; }
-    @media (min-width: 800px) { header.site { grid-template-columns: 160px 1fr; gap: 24px; } }
-    .avatar { width: 120px; height: 120px; border-radius: 9999px; overflow: hidden; border: 3px solid var(--border); background: #fff; }
-    @media (min-width: 800px) { .avatar { width: 160px; height: 160px; } }
+    header.site { display: grid; grid-template-columns: 240px 1fr; gap: 20px; align-items: center; padding: 36px 0 12px; }
+    @media (min-width: 800px) { header.site { grid-template-columns: 240px 1fr; gap: 24px; } }
+    .avatar { width: 180px; height: 180px; border-radius: 9999px; overflow: hidden; border: 3px solid var(--border); background: #fff; }
+    @media (min-width: 800px) { .avatar { width: 240px; height: 240px; } }
     .avatar img { width: 100%; height: 100%; object-fit: cover; }
     .hero h1 { font-size: clamp(28px, 5vw, 42px); margin: 0; letter-spacing: 0.2px; }
     .hero p { margin: 8px 0 0; color: var(--muted); line-height: 1.6; }
@@ -71,12 +71,17 @@
     <!-- Header / About me -->
     <header class="site" id="top">
       <div class="avatar">
-        <!-- Replace with your photo path -->
+        <!-- Photo path -->
         <img src="assets/me.jpg" alt="Portrait"/>
       </div>
       <div class="hero">
         <h1>Davide Garavaso</h1>
-        <p>Physics-oriented software engineer and game developer. I build physical simulations (cloth, vehicles), graphics tooling, and gameplay systems in C++/Python/Unreal/Unity. Interested in 3D vision, real-time physics, and robust engine design.</p>
+        <p>
+          Hi, I'm Davide Garavaso, a research fellow and master's student in Computer Game Development from Verona. <br>
+          I am passionate about physics simulation, programming, and video games, and I aspire to build my career in the video game industry. <br>
+          My research focuses on cloth segmentation using deep learning and the development of a cloth simulator in C++ and OpenGL, implementing both physically-based and position-based techniques. Alongside research, I am expanding my skills through a master’s degree, where I develop projects in Unreal Engine, Unity, and C++ exploring areas such as physics programming, gameplay programming and graphic programming. <br>       
+          Driven by curiosity and passion, I am motivated by the opportunity to grow professionally, learn new technologies, and contribute to new projects in the video game industry.
+        </p>
         <div class="chips">
           <span class="chip">Unreal Engine</span>
           <span class="chip">Unity</span>
@@ -249,7 +254,7 @@
         </li>
         <li>
           <div>
-            <strong>Simple 3D geometry utility for Open3D (python)</strong><br/>
+            <strong>Simple 3D geometry utility for Open3D (Python)</strong><br/>
             <small>Utility library for mesh/point-cloud processing (sampling, normals, primitives) in Python with Open3D.</small>
           </div>
           <a href="https://github.com/davide-gith/o3d-utility" target="_blank" rel="noopener">Code →</a>
