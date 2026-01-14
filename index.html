@@ -63,6 +63,8 @@
     .list li { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 10px 12px; border: 1px dashed var(--border); border-radius: 10px; background: #fff; }
     .list small { color: var(--muted); }
 
+    #sim-videos .grid + .card { margin-top: 16px; }
+
     footer { color: var(--muted); border-top: 1px dashed var(--border); padding: 24px 0; text-align: center; }
   </style>
 </head>
@@ -135,7 +137,7 @@
       </div>
     </section>
 
-    <!-- Simulation videos: two columns -->
+    <!-- Simulation videos -->
     <section id="sim-videos" class="section">
       <h2>🧪 Physics Simulation</h2>
       <div class="grid">
@@ -151,6 +153,13 @@
           <div class="video"><iframe src="https://www.youtube.com/embed/yGHgXt2FPfw?rel=0&modestbranding=1&playsinline=1" title="Cloth Simulation Collision" frameborder="0" allowfullscreen></iframe></div>
           <p><a href="https://github.com/davide-gith/Cloth-simulation" target="_blank" rel="noopener">🔗 View Code</a></p>
         </div>
+      </div>
+
+      <div class="col-6 card">
+          <h3>Cloth Simulator</h3>
+          <p>This video showcases Short demo of a cloth simulator that handles cloth interactions with different rigid objects, as well as interactive transformations with active colliders. In the final part, there is also a more playful example: an animated character kicks a ball that physically interacts with the scene and goes through the hoop, deforming the net in real time. This demonstrates how the same system can be used both for technical simulations and for gameplay-oriented interactions.</p>
+        <div class="video"><iframe src="https://www.youtube.com/embed/kwam99nMEPY" title="Cloth Simulator" frameborder="0" allowfullscreen></iframe></div>
+        <p><span class="meta"> 🔗 No code available</span> </span></p>
       </div>
     </section>
 
